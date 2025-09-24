@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { StyleSheet, Text, View, Button, TextInput, ScrollView, Alert, Image } from 'react-native';
-import SubTitulo from '../Atividade_Deficiencia/src/componentes/componentes';
+import SubTitulo from './src/componentes/componentes'
 
 export default function App() {
 
@@ -21,7 +21,6 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-
       <SubTitulo />
 
 
@@ -34,14 +33,14 @@ export default function App() {
           Se quiser, posso adaptar essa síntese para uso escolar, acadêmico ou institucional.</Text>
         <Image source={require('./src/imagens/imagem1.png')}
           style={{ height: 500, width: 400 }}></Image>
-        <Text style={{ fontSize: 21 }}>Conscientização sobre as Pessoas Mudas</Text>
+        <Text style={{ fontSize: 21,marginBottom:20,fontWeight:'bold' }}>Conscientização sobre as Pessoas Mudas</Text>
         <Text>A conscientização sobre as pessoas mudas é essencial para promover uma sociedade mais inclusiva e respeitosa. Embora a expressão “pessoas mudas” seja comum, é importante lembrar que muitas delas possuem habilidades comunicativas, como a linguagem de sinais, e que a falta da fala não significa falta de inteligência ou capacidade.
           Muitas vezes, a sociedade negligencia as necessidades e os direitos dessas pessoas, criando barreiras que dificultam seu acesso à educação, ao trabalho e à participação social plena. A falta de compreensão e de adaptação por parte das instituições e indivíduos gera isolamento e exclusão.
           Por isso, é fundamental investir em educação e sensibilização para que todos possam entender a importância da comunicação acessível. Incentivar o aprendizado da língua de sinais, respeitar os modos alternativos de comunicação e combater o preconceito são passos essenciais para garantir a inclusão e o respeito à diversidade.
           Reconhecer o valor e a capacidade das pessoas mudas é um passo para construir um mundo mais justo, onde todos possam se expressar e ser ouvidos, independentemente das suas particularidades.
         </Text>
       </ScrollView>
-      <Text style={{ fontSize: 20 }}>Escreva uma mensagem de Motivação</Text>
+      <Text style={{ fontSize: 20,fontWeight:'bold' }}>Escreva uma mensagem de Motivação</Text>
       < TextInput style={styles.Aparecer} onChangeText={setRecado} value={recado}></TextInput>
       <View style={{ height: 100 }}>
         <ScrollView>
