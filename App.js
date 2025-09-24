@@ -5,7 +5,7 @@ import SubTitulo from './src/componentes/componentes'
 
 export default function App() {
 
-  const [recado, setRecado] = useState(null);
+  const [recado, setRecado] = useState('');
   const [listaRecados, setListaRecados] = useState([])
 
   function enviar() {
@@ -22,10 +22,6 @@ export default function App() {
   return (
     <View style={styles.container}>
       <SubTitulo />
-
-
-
-
 
       <ScrollView>
         <Text style={{ textAlign: 'center' }}>A Semana da Inclusão da Pessoa com Deficiência é um evento voltado para a promoção da conscientização, respeito e valorização da diversidade, com foco na inclusão social e dos direitos das pessoas com deficiência. Durante essa semana, são realizadas atividades como palestras, oficinas, debates, apresentações culturais e ações educativas em escolas, empresas e instituições públicas.
@@ -47,7 +43,7 @@ export default function App() {
           {
             listaRecados && listaRecados.map(recado => {
               return (
-                <Text id={recado}>{recado}</Text>
+                <Text>{recado}</Text>
               )
             })
           }
